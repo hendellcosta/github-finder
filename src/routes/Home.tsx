@@ -5,6 +5,8 @@ import { UserProps } from "../types/user";
 import User from '../components/User'
 import Error from '../components/Error'
 
+import classes from './Home.module.css'
+
 function Home() {
   const [user, setUser] = useState<UserProps | null>(null); // user type can be UserProps or null, but will start as null
   const [error, setError] = useState(false);
@@ -38,7 +40,7 @@ function Home() {
   };
 
   return (
-    <div>
+    <div className={classes.home}>
       <Search loadUser={loadUser} />{" "}
       {/* the loadUser that will be used on the <Search /> is the one declared here */}
 

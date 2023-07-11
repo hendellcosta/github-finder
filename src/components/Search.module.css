@@ -19,6 +19,10 @@
     gap: 0.5rem;
 }
 
+.search_container input {
+    outline: none;
+}
+
 .search_container input, .search_container button {
     padding: 0.6rem;
     border-radius: 3px;
